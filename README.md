@@ -33,7 +33,7 @@ finlab_course包含了[hahow](https://hahow.in/courses/5a2170d5a6d4a5001ec3148d/
   User Password: bobbyteeseanwp9
 - 基本使用範例：
   - find:
-    - `db.getCollection('dailyPrice').find({'year': '2019', 'stockId': '2330'})`
+    - `db.getCollection('dailyPrice').find({'timestamp': 'ISODate("2009-01-05T00:00:00.000Z")', 'stockId': '2330'})`
     - `db.getCollection('dailyPrice').find({“$or/and”:[ {'stockId':'2330'}, {'stockId':'0050'}]})`
   - distinct:
     - `db.getCollection('dailyPrice').distinct('timestamp')`: 列出所有unique的日期，意即此Documentation中的資料時間區間。
